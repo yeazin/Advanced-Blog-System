@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% block title %} {% endblock %}
+{% block body %}
+<form method="POST" >
+    {% csrf_token %}
+    {% for message in messages %} 
+        <p>{{ message }}</p>
+    {% endfor %}
+    <input type="text" name='email' placeholder="Email Here ..">
+    <input type="text" name='passowrd' placeholder="Password here">
+    <input type="submit">
+    <p>Don`t have account <br> <a href="{% url 'create_user' %}">Make one Now</a></p>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Home :: Blogs {% endblock %}
+{% block body %}
+<div class="container">
+    <div class="topics_cloud">
+        {% for t in topics %}
+        <h4>{{ t }} </h4>
+        {% endfor %}
+    </div>
+    <div class="post_grid">
+        <div class='post'>
+            <div class="upone">
+                <img src="" alt="avatar">
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

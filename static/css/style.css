@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #dfe4ea;
+}
+.container{
+    width:1200px;
+    height: auto;
+    margin:0 auto;
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    box-shadow: 10px 10x 5px 10px gray;
+}
+.logo{
+    width:20%;
+    float:left;
+}
+.searchbar{
+    width:30%;
+    
+}
+.searchbar input[type=text]{
+    width:80%;
+    height:auto;
+    margin:0 auto;
+    margin:10px;
+    border-radius: 5px;
+    padding:12px 10px;
+    background-color: #ecf0f1;
+    border:none;
+}
+.searchbar input[type=text]:hover{
+    border:none;
+}
+.menu{
+    width:40%;
+    margin:0 auto;
+    
+    margin:0 auto;;
+}
+.login_area{
+    width:10%;
+    display: block;
+}
+ul{
+    
+    list-style-type: none;
+}
+ul li{
+    float:left;
+    padding:20px 10px;
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+ul li:hover{
+    
+    background-color: #ecf0f1;
+    border-radius: 2px;
+}
+.topics_cloud{
+    
+    width:80%;
+    margin:50px auto;
+}
+.topics_cloud h4{
+    display: inline;
+    margin: 3px;
+    padding:10px 12px; 
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+.post_grid{
+    width:80%;
+    margin: 0 auto;
+    
+}
+.post{
+    width:17%;
+    background-color: white;
+    
+    
+    
+}

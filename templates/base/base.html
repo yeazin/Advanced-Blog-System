@@ -1,0 +1,50 @@
+{% load static %}
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <div class='logo'>
+            <h4> <a href="{% url 'home' %}"> BlogBB </a></h4>
+        </div>
+        <div class='searchbar'>
+            <input type="text" placeholder="Search favourites articles,Catagories,tags...">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">#Trending</a></li>
+                <li><a href="">Topics</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Top Authors</a></li>
+                
+            </ul>
+        </div>
+        <div class='login_area'>
+            <img src='' alt="user">
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'logout' %}">Logout </a>
+            {% else %}
+            <a href="{% url 'login' %}">Login or SignUp</a>
+            {% endif %}
+
+        </div>
+    </nav>
+    {% block body %}
+       
+    {% endblock %}
+</body>
+</html>
+
+
+
+
